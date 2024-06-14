@@ -8,14 +8,17 @@ import (
 	"syscall"
 
 	"github.com/bwmarrin/discordgo"
+	"github.com/joho/godotenv"
 )
 
 func main() {
 
-	secret, err := os.ReadFile("botID.txt")
+	err := godotenv.Load(".env")
 	if err != nil {
-		log.Fatal(err)
+		log.Fatalf("Error loading .env file: %s", err)
 	}
+
+	secret := os.Getenv("DISCORD_BOT_ID")
 
 	sess, err := discordgo.New(string(secret))
 	if err != nil {
