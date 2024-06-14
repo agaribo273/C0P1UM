@@ -1,7 +1,7 @@
 ---
 name: Feature Implementation
 about: Create trackable work that is yet to be implemented
-title: COPE-[insert PR number here]
+title: COPE-[update-with-issue-number]
 labels: enhancement
 assignees: ''
 
