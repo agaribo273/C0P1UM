@@ -1,3 +1,6 @@
+**GitHub Issue** (if one was created)
+<!-- Rename the title to be COPE-[issue-number/PR-number]-->
+
 ## Summary (required)
 <!-- Give a summary of what you changed (and why if possible) -->
 
